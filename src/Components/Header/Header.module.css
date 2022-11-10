@@ -22,3 +22,14 @@
   font-size: 0.75rem;
   font-weight: 500;
 }
+
+@media only screen and (max-width: 800px) {
+  .header {
+    padding: 1% 5%;
+  }
+
+  .header--image {
+    height: 60%;
+    margin-right: 6px;
+  }
+}

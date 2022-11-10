@@ -52,10 +52,12 @@ const Meme = () => {
   return (
     <main>
       <div className={styles.form}>
-        <input type="text" placeholder="Top text" className={styles["form--input"]} name="topText" value={meme.topText} onChange={handleChange} />
-        <input type="text" placeholder="Bottom text" className={styles["form--input"]} name="bottomText" value={meme.bottomText} onChange={handleChange} />
+        <div className={styles.input}>
+          <input type="text" placeholder="Top text" className={styles["form--input"]} name="topText" value={meme.topText} onChange={handleChange} />
+          <input type="text" placeholder="Bottom text" className={styles["form--input"]} name="bottomText" value={meme.bottomText} onChange={handleChange} />
+        </div>
         <button className={styles["form--button"]} onClick={getMemeImage}>
-          Get a new meme image 🖼
+          get new image
         </button>
       </div>
       <div className={styles.meme}>
